@@ -31,5 +31,5 @@ A complexidade de tempo O(1) (Tempo Constante) é a mais eficiente em termos de 
 
 > [Ruby O(1)](ruby/exe_o(1).rb)
 
-> [Javascript O(1)](javascript/exe_o(1).rb)
+> [Javascript O(1)](javascript/exe_o(1).js)
 
