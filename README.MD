@@ -109,3 +109,5 @@ Um algoritmo é linear quando ele precisa, no pior caso, tocar ou processar cada
 ---
 
 ## Complexidade - O(n log n)  Tempo Linearítmico
+
+O tempo de execução Linearítmico, expresso como O(n \log n), é uma complexidade de tempo comum e muito eficiente em algoritmos de ordenação e de dividir para conquistar.Ele representa uma taxa de crescimento que é um pouco mais lenta que a linear (O(n)), mas significativamente mais rápida que a quadrática (O(n^2)) ou exponencial.
