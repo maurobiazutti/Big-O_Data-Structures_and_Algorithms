@@ -28,6 +28,12 @@ A Notação Big-O (O) é a principal métrica para descrever a complexidade (des
 
 A complexidade de tempo O(1) (Tempo Constante) é a mais eficiente em termos de Big-O. Ela significa que o tempo de execução de um algoritmo ou de uma operação não muda em relação ao tamanho da entrada (n).Independentemente se você está trabalhando com 1 item, 1.000 itens ou 1 bilhão de itens, a operação levará essencialmente o mesmo tempo.
 
+### Exemplo Clássico:
+
+1. **Acessar um elemento de um Array pelo índice**
+
+   - Se você tem uma lista e sabe exatamente a posição (o índice) do que precisa, o computador chega lá instantaneamente. Ele não precisa ler os itens anteriores; ele faz um cálculo matemático simples de endereço de memória.
+
 #### Exemplos de Uso:
 
 > [Ruby O(1)](ruby/exe_o(1).rb)
@@ -84,7 +90,7 @@ Um algoritmo é linear quando ele precisa, no pior caso, tocar ou processar cada
 
    - Pior Caso: O valor procurado é o último elemento da lista ou não existe. O algoritmo deve verificar todos os n elementos antes de concluir.
   
-2. Encontrar o Valor Mínimo/Máximo 
+2. Encontrar o Valor Mínimo/Máximo
 
    - Problema:Encontrar o maior ou menor número em uma lista desordenada de n elementos.
   
@@ -92,7 +98,7 @@ Um algoritmo é linear quando ele precisa, no pior caso, tocar ou processar cada
 
    - Complexidade: Você faz exatamente n-1 comparações, o que é arredondado para O(n).
 
-3. Cópia de um ArrayProblema: 
+3. Cópia de um Array Problema:
 
    - Criar uma cópia exata de um array (vetor) de n elementos.
   
