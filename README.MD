@@ -116,4 +116,44 @@ Um algoritmo é linear quando ele precisa, no pior caso, tocar ou processar cada
 
 ## Complexidade - O(n log n)  Tempo Linearítmico
 
-O tempo de execução Linearítmico, expresso como O(n \log n), é uma complexidade de tempo comum e muito eficiente em algoritmos de ordenação e de dividir para conquistar.Ele representa uma taxa de crescimento que é um pouco mais lenta que a linear (O(n)), mas significativamente mais rápida que a quadrática (O(n^2)) ou exponencial.
+O tempo de execução Linearítmico, expresso como O(n log n), é uma complexidade de tempo comum e muito eficiente em algoritmos de ordenação de dividir para conquistar.Ele representa uma taxa de crescimento que é um pouco mais lenta que a linear (O(n)), mas significativamente mais rápida que a quadrática (O(n^2)) ou exponencial.
+
+**O que significa O(n log n)?**
+
+Para entender essa complexidade, imagine que ela é a combinação de duas forças:
+
+1. **n (Linear):**  Você precisa passar por quase todos os elementos da lista.
+
+2. **log n (Logarítmica):**  Em cada passo ou nível, você divide o problema pela metade (estratégia de "Dividir para Conquistar").
+
+Quando multiplicamos as duas, temos um algoritmo que processa os dados de forma muito mais inteligente do que comparar "todo mundo com todo mundo" (n * n).
+
+**Comparação de Crescimento:**
+
+Se tivermos **1.000.000** de itens:
+
+   - **O(n):** 1.000.000 de operações.
+  
+   - **O(n log n):** Aproximadamente 20.000.000 de operações (muito viável).
+
+   - **O(n^2):** 1.000.000.000.000 de operações (extremamente lento).
+
+#### Exemplos Clássicos:
+
+A maioria dos algoritmos eficientes de ordenação utiliza essa complexidade:
+
+**1 . Merge Sort (Ordenação por Intercalação)**
+
+O Merge Sort divide a lista repetidamente ao meio até que restem apenas listas de um único elemento. Depois, ele as combina de volta em ordem.
+
+   - **Divisão:** log n níveis de divisões.
+  
+   - **Combinação:** n operações para comparar e juntar os elementos em cada nível.
+  
+   - **Total:** O(n log n).
+  
+**2 . Quick Sort**
+  
+  No caso médio, o Quick Sort escolhe um "pivô" e particiona a lista. Se o pivô for bem escolhido, ele segue o padrão linearítmico.
+  
+  **Nota**: Em seu pior cenário (lista já ordenada e pivô ruim), ele pode cair para O(n^2), mas na prática é um dos mais rápidos.
