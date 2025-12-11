@@ -82,29 +82,27 @@ O **Tempo Linear**, ou **O(n)**, descreve algoritmos cujo tempo de execução cr
  
 Um algoritmo é linear quando ele precisa, no pior caso, tocar ou processar cada elemento da entrada uma única vez.
 
-1. Busca Linear (ou Busca Sequencial)
+1. **Busca Linear (ou Busca Sequencial)**
 
-   - Problema: Encontrar um valor específico em uma lista de n elementos.
+   - **Problema:** Encontrar um valor específico em uma lista de n elementos.
 
-   - Processo: Você percorre a lista do começo ao fim.
+   - **Processo:** Você percorre a lista do começo ao fim.
 
-   - Pior Caso: O valor procurado é o último elemento da lista ou não existe. O algoritmo deve verificar todos os n elementos antes de concluir.
+   - **Pior Caso:** O valor procurado é o último elemento da lista ou não existe. O algoritmo deve verificar todos os n elementos antes de concluir.
   
-2. Encontrar o Valor Mínimo/Máximo
+2. **Encontrar o Valor Mínimo/Máximo**
 
-   - Problema:Encontrar o maior ou menor número em uma lista desordenada de n elementos.
+   - **Problema:** Encontrar o maior ou menor número em uma lista desordenada de n elementos.
   
-   - Processo: Você precisa iterar sobre a lista inteira, comparando cada elemento com o valor máximo/mínimo atual.
+   - **Processo:** Você precisa iterar sobre a lista inteira, comparando cada elemento com o valor máximo/mínimo atual.
 
-   - Complexidade: Você faz exatamente n-1 comparações, o que é arredondado para O(n).
+   - **Complexidade:** Você faz exatamente n-1 comparações, o que é arredondado para O(n).
 
-3. Cópia de um Array Problema:
+3. **Cópia de um Array Problema:**
 
-   - Criar uma cópia exata de um array (vetor) de n elementos.
+   - **Problema:** Criar uma cópia exata de um array (vetor) de n elementos.
   
-   - Processo: Você deve acessar cada um dos $n$ elementos do array original para copiá-lo para o novo array.
-  
-   - Complexidade: O(n).
+   - **Processo:** Você deve acessar cada um dos n elementos do array original para copiá-lo para o novo array.
 
 #### Exemplos de Uso:
 
