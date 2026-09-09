@@ -12,15 +12,15 @@ A Notação Big-O (O) é a principal métrica para descrever a complexidade (des
 
 ---
 
-| Notação Big-O | Nome               | Descrição                                                                                   | Exemplo Comum                                                |
-|---------------|--------------------|-----------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| O(1)          | Tempo Constante    | O tempo de execução não muda com o tamanho da entrada.                                        | Acessar um elemento por índice em um array.                  |
-| O(log n)      | Tempo Logarítmico  | O tempo de execução se reduz pela metade a cada passo. Muito rápido.                          | Busca Binária (Binary Search).                               |
-| O(n)          | Tempo Linear       | O tempo de execução cresce proporcionalmente ao tamanho da entrada.                           | Iterar uma lista/array uma vez.                              |
-| O(n log n)    | Tempo Linearítmico | Comum em algoritmos de ordenação eficientes.                                                   | Merge Sort, Heap Sort.                                       |
-| O(n²)         | Tempo Quadrático   | O tempo cresce com o quadrado do tamanho da entrada. Normalmente loops aninhados.             | Bubble Sort, comparar pares em um array.                     |
-| O(2ⁿ)         | Tempo Exponencial  | O tempo dobra a cada nova unidade da entrada. Muito lento.                                     | Fibonacci com recursão ingênua.                              |
-| O(n!)         | Tempo Fatorial     | Crescimento absurdo (permutações). Inviável para entradas maiores que 10–20.                  | Traveling Salesman por força bruta.                          |
+| Notação Big-O | Nome               | Descrição                                                                         | Exemplo Comum                               |
+| ------------- | ------------------ | --------------------------------------------------------------------------------- | ------------------------------------------- |
+| O(1)          | Tempo Constante    | O tempo de execução não muda com o tamanho da entrada.                            | Acessar um elemento por índice em um array. |
+| O(log n)      | Tempo Logarítmico  | O tempo de execução se reduz pela metade a cada passo. Muito rápido.              | Busca Binária (Binary Search).              |
+| O(n)          | Tempo Linear       | O tempo de execução cresce proporcionalmente ao tamanho da entrada.               | Iterar uma lista/array uma vez.             |
+| O(n log n)    | Tempo Linearítmico | Comum em algoritmos de ordenação eficientes.                                      | Merge Sort, Heap Sort.                      |
+| O(n²)         | Tempo Quadrático   | O tempo cresce com o quadrado do tamanho da entrada. Normalmente loops aninhados. | Bubble Sort, comparar pares em um array.    |
+| O(2ⁿ)         | Tempo Exponencial  | O tempo dobra a cada nova unidade da entrada. Muito lento.                        | Fibonacci com recursão ingênua.             |
+| O(n!)         | Tempo Fatorial     | Crescimento absurdo (permutações). Inviável para entradas maiores que 10–20.      | Traveling Salesman por força bruta.         |
 
 ---
 
@@ -155,3 +155,11 @@ O Merge Sort divide a lista repetidamente ao meio até que restem apenas listas 
   No caso médio, o Quick Sort escolhe um "pivô" e particiona a lista. Se o pivô for bem escolhido, ele segue o padrão linearítmico.
   
   **Nota**: Em seu pior cenário (lista já ordenada e pivô ruim), ele pode cair para O(n^2), mas na prática é um dos mais rápidos.
+
+  #### Exemplos de Uso:
+
+> [Ruby O(n log n)](ruby/tempo_linearítmico.rb)
+
+> [Javascript O(n log n)](javascript/tempo_linearítmico.js)
+
+---
