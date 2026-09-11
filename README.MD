@@ -36,9 +36,9 @@ A complexidade de tempo O(1) (Tempo Constante) é a mais eficiente em termos de 
 
 #### Exemplos de Uso:
 
-> [Ruby O(1)](ruby/tempo_constante.rb)
+> [Ruby O(1)](algoritmos/ruby/tempo_constante.rb)
 
-> [Javascript O(1)](javascript/tempo_constante.js)
+> [Javascript O(1)](algoritmos/javascript/tempo_constante.js)
 
 ---
 
@@ -66,9 +66,9 @@ O exemplo mais comum de um algoritmo com complexidade O(log n) é a **Busca Bin�
 
 #### Exemplos de Uso:
 
-> [Ruby O(log n)](ruby/tempo_logaritmico.rb)
+> [Ruby O(log n)](algoritmos/ruby/tempo_logaritmico.rb)
 
-> [Javascript O(log n)](javascript/tempo_logaritmico.js)
+> [Javascript O(log n)](algoritmos/javascript/tempo_logaritmico.js)
 
 ---
 
@@ -106,9 +106,9 @@ Um algoritmo é linear quando ele precisa, no pior caso, tocar ou processar cada
 
 #### Exemplos de Uso:
 
-> [Ruby O(n)](ruby/tempo_linear.rb)
+> [Ruby O(n)](algoritmos/ruby/tempo_linear.rb)
 
-> [Javascript O(n)](javascript/tempo_linear.js)
+> [Javascript O(n)](algoritmos/javascript/tempo_linear.js)
 
 ---
 
@@ -158,8 +158,8 @@ O Merge Sort divide a lista repetidamente ao meio até que restem apenas listas 
 
   #### Exemplos de Uso:
 
-> [Ruby O(n log n)](ruby/tempo_linearítmico.rb)
+> [Ruby O(n log n)](algoritmos/ruby/tempo_linearítmico.rb)
 
-> [Javascript O(n log n)](javascript/tempo_linearítmico.js)
+> [Javascript O(n log n)](algoritmos/javascript/tempo_linearítmico.js)
 
 ---
