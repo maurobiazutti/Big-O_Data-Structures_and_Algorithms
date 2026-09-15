@@ -163,3 +163,57 @@ O Merge Sort divide a lista repetidamente ao meio até que restem apenas listas 
 > [Javascript O(n log n)](algoritmos/javascript_algoritmos/tempo_linearítmico.js)
 
 ---
+
+## Complexidade - O(n²) Tempo Quadrático
+
+O tempo de execução Quadrático, expresso como **O(n²)**, é uma complexidade de tempo comum em algoritmos de ordenação simples e algoritmos de força bruta. Ele representa uma taxa de crescimento em que o tempo necessário para executar o algoritmo cresce de forma proporcional ao quadrado do tamanho da entrada ($n$). Para pequenas quantidades de dados ele é viável, mas se torna rapidamente ineficiente à medida que o volume de dados aumenta.
+
+**O que significa O(n²)?**
+
+Para entender essa complexidade, imagine que ela é a combinação de duas operações encadeadas:
+
+1. **Laço Externo ($n$):** Você precisa iterar sobre todos os elementos da lista.
+
+2. **Laço Interno ($n$):** Para cada elemento do laço externo, você precisa percorrer a lista inteira novamente.
+
+Quando multiplicamos as duas ($n \times n$), temos um algoritmo que compara "todo mundo com todo mundo". Se você dobrar o tamanho da lista, a quantidade de processamento não dobra — ela quadruplica ($2^2 = 4$).
+
+**Comparação de Crescimento:**
+
+Se tivermos **10.000** itens:
+
+   - **O(n):** 10.000 de operações (instantâneo).
+
+   - **O(n log n):** Aproximadamente 130.000 de operações (muito rápido).
+
+   - **O(n²):** 100.000.000 de operações (começa a engasgar o sistema).
+
+Se tivermos **1.000.000** de itens:
+
+   - **O(n²):** 1.000.000.000.000 de operações (1 trilhão de operações — impraticável).
+
+#### Exemplos Clássicos:
+
+A maioria dos algoritmos simples de ordenação e operações com laços aninhados utiliza essa complexidade:
+
+**1 . Bubble Sort (Ordenação por Bolha)**
+
+O Bubble Sort percorre a lista repetidamente, comparando elementos adjacentes e os trocando de lugar se estiverem na ordem errada.
+
+   - **Laço Externo:** Executa "n" vezes para garantir que todos os elementos fiquem ordenados.
+
+   - **Laço Interno:** Faz "n" comparações a cada passagem para mover o maior elemento.
+
+   - **Total:** O(n²).
+
+**2 . Insertion Sort (Ordenação por Inserção)**
+
+O Insertion Sort constrói a lista ordenada um item por vez, inserindo cada novo elemento na posição correta entre os já ordenados.
+
+   - **Pior Caso:** Se a lista estiver invertida, cada novo elemento precisará ser comparado com todos os elementos anteriores.
+
+   - **Total:** O(n²).
+
+**3 . Laços Aninhados (Nested Loops)**
+
+Percorrer uma matriz $n \times n$ ou encontrar todos os pares possíveis dentro de um conjunto de dados.
