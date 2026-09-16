@@ -220,4 +220,6 @@ Percorrer uma matriz $n \times n$ ou encontrar todos os pares possíveis dentro 
 
  #### Exemplos de Uso:
 
-> [Ruby O(n log n)](algoritmos/ruby_algoritmos/tempo_quadratico.rb)
+> [Ruby O(n²](algoritmos/ruby_algoritmos/tempo_quadratico.rb)
+
+> [javascript O(n²](algoritmos/javascript_algoritmos/tempo_quadratico.js)
