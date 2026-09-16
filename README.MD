@@ -217,3 +217,7 @@ O Insertion Sort constrói a lista ordenada um item por vez, inserindo cada novo
 **3 . Laços Aninhados (Nested Loops)**
 
 Percorrer uma matriz $n \times n$ ou encontrar todos os pares possíveis dentro de um conjunto de dados.
+
+ #### Exemplos de Uso:
+
+> [Ruby O(n log n)](algoritmos/ruby_algoritmos/tempo_quadratico.rb)
