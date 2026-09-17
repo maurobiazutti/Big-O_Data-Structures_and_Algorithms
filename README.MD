@@ -223,3 +223,60 @@ Percorrer uma matriz $n \times n$ ou encontrar todos os pares possíveis dentro 
 > [Ruby O(n²)](algoritmos/ruby_algoritmos/tempo_quadratico.rb)
 
 > [javascript O(n²)](algoritmos/javascript_algoritmos/tempo_quadratico.js)
+
+---
+
+## Complexidade - O(2ⁿ) Tempo Exponencial
+
+O tempo de execução Exponencial, expresso como **O(2ⁿ)**, é uma das piores e mais custosas complexidades de tempo na ciência da computação. Ele representa uma taxa de crescimento em que o tempo necessário para executar o algoritmo **dobra a cada novo elemento** adicionado à entrada ($n$). Algoritmos com essa complexidade tornam-se inviáveis mesmo para entradas muito pequenas.
+
+**O que significa O(2ⁿ)?**
+
+Para entender essa complexidade, imagine que ela funciona como uma reação em cadeia ou uma árvore de decisões:
+
+1. **Decisão Dupla:** A cada novo elemento do problema, o número de caminhos ou subproblemas a resolver multiplica por 2.
+
+2. **Crescimento Explosivo:** Para $n = 1$, temos $2$ operações; para $n = 2$, temos $4$; para $n = 3$, temos $8$; para $n = 10$, temos $1.024$ operações.
+
+Diferente do crescimento polinomial ($n^2$), onde a base é a entrada e o expoente é fixo, no crescimento exponencial **a própria entrada fica no expoente**.
+
+**Comparação de Crescimento:**
+
+Imagine adicionar apenas **10 itens** a mais em uma entrada:
+
+* **Para $n = 10$:**
+  * **O(n):** 10 operações.
+  * **O(n²):** 100 operações.
+  * **O(2ⁿ):** 1.024 operações.
+
+* **Para $n = 30$:**
+  * **O(n):** 30 operações.
+  * **O(n²):** 900 operações.
+  * **O(2ⁿ):** 1.073.741.824 operações (mais de 1 bilhão).
+
+* **Para $n = 100$:**
+  * **O(2ⁿ):** Aproximadamente $1,26 \times 10^{30}$ operações — uma quantidade imensamente maior do que o número total de átomos na Terra, tornando a execução **impossível**, mesmo com supercomputadores.
+
+#### Exemplos Clássicos:
+
+Algoritmos que tentam explorar **todas as combinações ou subconjuntos possíveis** de um conjunto costumam ter complexidade exponencial:
+
+**1 . Fibonacci Ineficiente (Recursão Simples)**
+
+Calcular o $n$-ésimo termo da sequência de Fibonacci chamando a função recursivamente sem memorização (*memoization*).
+
+* **Estrutura:** Cada chamada gera 2 novas chamadas de função em uma árvore que cresce em profundidade até $n$.
+* **Total:** $O(2^n)$ chamadas de função (muitos cálculos são repetidos desnecessariamente).
+
+**2 . Problema dos Subconjuntos (Power Set)**
+
+Gerar todos os subconjuntos possíveis de um conjunto com $n$ elementos.
+
+* **Lógica:** Para cada elemento do conjunto, você tem 2 escolhas: **incluí-lo** ou **não incluí-lo** no subconjunto.
+* **Total:** Um conjunto de $n$ elementos tem exatamente $2^n$ subconjuntos possíveis.
+
+**3 . Força Bruta para Senhas / Combinações**
+
+Testar todas as combinações de chaves binárias de tamanho $n$ (onde cada bit pode ser `0` ou `1`).
+
+---
