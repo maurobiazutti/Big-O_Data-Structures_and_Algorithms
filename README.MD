@@ -279,4 +279,10 @@ Gerar todos os subconjuntos possíveis de um conjunto com $n$ elementos.
 
 Testar todas as combinações de chaves binárias de tamanho $n$ (onde cada bit pode ser `0` ou `1`).
 
+ #### Exemplos de Uso:
+
+> [Ruby O(n²)](algoritmos/ruby_algoritmos/tempo_exponencial.rb)
+
+> [javascript O(n²)](algoritmos/javascript_algoritmos/tempo_exponencial.js)
+
 ---
