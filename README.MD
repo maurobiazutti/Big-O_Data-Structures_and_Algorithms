@@ -286,3 +286,56 @@ Testar todas as combinações de chaves binárias de tamanho $n$ (onde cada bit 
 > [javascript O(n²)](algoritmos/javascript_algoritmos/tempo_exponencial.js)
 
 ---
+
+## Complexidade - O(n!) Tempo Fatorial
+
+O tempo de execução Fatorial, expresso como **O(n!)**, representa a pior taxa de crescimento comum na ciência da computação. Ele descreve algoritmos onde o número de operações necessárias é o produto de todos os números inteiros positivos menores ou iguais a $n$ ($n! = n \times (n-1) \times (n-2) \times \dots \times 1$).
+
+Enquanto a complexidade exponencial $O(2^n)$ dobra a cada novo item, a complexidade fatorial cresce de forma catastrófica a cada incremento na entrada, tornando a execução inviável mesmo para valores minúsculos de $n$ (como $n = 15$).
+
+---
+
+### O que significa O(n!)?
+
+Para entender essa complexidade, imagine que você precisa testar **todas as permutações ou arranjos possíveis** de um conjunto de itens:
+
+1. **Primeira escolha:** Você tem $n$ opções para a primeira posição.
+2. **Segunda escolha:** Restam $(n - 1)$ opções para a segunda posição.
+3. **Terceira escolha:** Restam $(n - 2)$ opções, e assim sucessivamente.
+
+Multiplicando todas essas opções ($n \times (n-1) \times (n-2) \times \dots \times 1$), o número de cenários a avaliar explode rapidamente.
+
+---
+
+### Comparação de Crescimento:
+
+Veja como o número de operações escala rapidamente com pequenos aumentos em $n$:
+
+* **Para $n = 5$:**
+  * **$O(n^2)$:** $25$ operações.
+  * **$O(2^n)$:** $32$ operações.
+  * **$O(n!)$:** $120$ operações.
+
+* **Para $n = 10$:**
+  * **$O(n^2)$:** $100$ operações.
+  * **$O(2^n)$:** $1.024$ operações.
+  * **$O(n!)$:** $3.628.800$ de operações.
+
+* **Para $n = 20$:**
+  * **$O(n!)$:** Aproximadamente $2,43 \times 10^{18}$ operações (mais de 2 quintilhões) — levaria **décadas** para rodar em um computador normal.
+
+* **Para $n = 50$:**
+  * **$O(n!)$:** $\approx 3 \times 10^{64}$ operações — completamente **impossível** de ser processado no Universo conhecido.
+
+---
+
+### Exemplos Clássicos:
+
+#### 1. O Problema do Caxeiro-Viajante (Traveling Salesperson Problem - Força Bruta)
+Dado um conjunto de $n$ cidades e as distâncias entre elas, encontre a rota mais curta que visita todas as cidades e retorna à cidade de origem.
+
+* **Força Bruta:** Gerar e calcular a distância total de todas as permutações possíveis de cidades.
+* **Complexidade:** $O(n!)$ (ou $O((n-1)!/2)$ para rotas não direcionadas).
+
+#### 2. Gerar TODAS as Permutações de uma String/Lista
+Construir todas as ordens possíveis para os caracteres de uma palavra (ex: anagramas).
