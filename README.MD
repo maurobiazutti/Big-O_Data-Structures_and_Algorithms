@@ -327,7 +327,6 @@ Veja como o número de operações escala rapidamente com pequenos aumentos em $
 * **Para $n = 50$:**
   * **$O(n!)$:** $\approx 3 \times 10^{64}$ operações — completamente **impossível** de ser processado no Universo conhecido.
 
----
 
 ### Exemplos Clássicos:
 
@@ -339,3 +338,11 @@ Dado um conjunto de $n$ cidades e as distâncias entre elas, encontre a rota mai
 
 #### 2. Gerar TODAS as Permutações de uma String/Lista
 Construir todas as ordens possíveis para os caracteres de uma palavra (ex: anagramas).
+
+---
+
+ #### Exemplos de Uso:
+
+> [Ruby O(n!)](algoritmos/ruby_algoritmos/tempo_fatorial.rb)
+
+> [javascript O(n!)](algoritmos/javascript_algoritmos/tempo_fatorial.js)
