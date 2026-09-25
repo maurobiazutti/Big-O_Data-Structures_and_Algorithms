@@ -15,5 +15,6 @@ puts "O menor valor é: #{menor_valor}"
 palavras = %w[banana abacaxi laranja uva]
 puts "Palavras originais: #{palavras.inspect}"
 
+# &: é uma forma curta de transformar um metodo em um bloco. Aqui, &:length é equivalente a { |palavra| palavra.length }.
 palavra_mais_longa = palavras.max_by(&:length)
 puts "A palavra mais longa é: #{palavra_mais_longa}"
